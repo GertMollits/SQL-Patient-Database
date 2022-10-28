@@ -1,0 +1,31 @@
+CREATE TABLE patient (
+    _id INT PRIMARY KEY AUTO_INCREMENT,
+    pn VARCHAR (11) NOT NULL;
+    first VARCHAR (15) DEFAULT 'null';
+    last VARCHAR (25) DEFAULT 'null';
+    dob VARCHAR DATE DEFAULT 'null';
+    ); 
+
+    INSERT INTO patient VALUES (001,1,'Bob','Builder','08-11-96');
+    INSERT INTO patient VALUES (002,2,'Kate','Thompson','11-01-88');
+    INSERT INTO patient VALUES (003,3,'jimmy','James','23-09-67');
+    INSERT INTO patient VALUES (004,4,'Mary','Griffin','25-02-89');
+    INSERT INTO patient VALUES (005,5,'Jack','Durant','22-10-77');
+
+
+CREATE TABLE insurance (
+_id int (10);
+patient_id int (11);
+iname VARCHAR (40) DEFAULT 'null';
+from_date Date DEFAULT 'null';
+to_date Date DEFAULT 'null'; 
+);
+
+INSERT INTO insurance VALUES(001,1,'Bob','20-01-01','20-01-21');
+INSERT INTO insurance VALUES(002,2,'Kate','12-09-13','12-03-23');
+
+Select *  from insurance; 
+
+
+
+
